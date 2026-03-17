@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Knocked MVP"
+version = "1.0.0"
+id = "artifacts/knocked-mvp"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 19341
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/knocked-mvp run dev"
+
+[services.env]
+PORT = "19341"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/knocked-mvp", "run", "build"]
+publicDir = "artifacts/knocked-mvp/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
