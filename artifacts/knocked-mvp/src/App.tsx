@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import { Switch, Route, Router as WouterRouter } from 'wouter';
 import { supabase } from './lib/supabase';
+import KnockedLandingPage from './pages/LandingPage';
 
 type Child = {
   id: string;
@@ -10,7 +12,7 @@ type Child = {
 
 const ORG_ID = '307dcc3f-9730-499f-beae-83f7515a0173';
 
-export default function App() {
+function Dashboard() {
   const [children, setChildren] = useState<Child[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -79,5 +81,16 @@ export default function App() {
         </>
       )}
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+      <Switch>
+        <Route path="/" component={KnockedLandingPage} />
+        <Route path="/dashboard" component={Dashboard} />
+      </Switch>
+    </WouterRouter>
   );
 }
