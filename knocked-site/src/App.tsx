@@ -735,7 +735,9 @@ export default function App() {
 
           <section className="problem-section">
             <div className="eyebrow-dark">The problem</div>
-            <h2>Injury information is fragmented, inconsistent, and too easy to miss.</h2>
+            <h2 style={{ color: "white" }}>
+  Injury information is fragmented, inconsistent, and too easy to miss.
+</h2>
             <p>
               A child can be injured at a sports club on Saturday, turn up to
               school on Monday, and nobody in PE knows. Or a school logs an issue
