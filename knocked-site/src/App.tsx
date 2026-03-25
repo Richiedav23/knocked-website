@@ -325,13 +325,14 @@ export default function App() {
         }
 
         .section-title {
-          margin: 0 0 14px;
-          font-size: 40px;
-          line-height: 1.08;
-          letter-spacing: -0.04em;
-          color: #0f172a;
-          max-width: 780px;
-        }
+  margin: 0 auto 22px;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  color: #0f172a;
+  max-width: 900px;
+  text-align: center;
+}
 
         .problem-section {
           background: linear-gradient(135deg, #0f172a, #1e3a8a 58%, #2563eb 100%);
@@ -347,27 +348,27 @@ export default function App() {
           letter-spacing: 0.14em;
         }
 
-        .problem-section .section-title {
-          color: white;
-          max-width: 900px;
-          margin-bottom: 14px;
-        }
+      .problem-section .section-title {
+  color: white;
+  max-width: 900px;
+  margin: 0 auto 14px;
+  text-align: center;
 
-        .problem-copy {
-          margin: 0;
-          max-width: 920px;
-          font-size: 18px;
-          line-height: 1.85;
-          color: #eff6ff;
-        }
+.problem-copy {
+margin:0 auto;
+max-width: 920px;
+font-size: 18px;
+line-height: 1.85;
+color: #eff6ff;
+text-align: center;
+}
 
-        .cards-grid,
-        .features-grid,
-        .audience-grid {
-          display: grid;
-          gap: 14px;
-        }
 
+.cards-grid,
+.features-grid,
+.audience-grid {
+  margin-top: 24px;
+}
         .cards-grid {
           grid-template-columns: repeat(3, 1fr);
         }
@@ -421,15 +422,16 @@ export default function App() {
           border-radius: 30px;
           padding: 28px;
           box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
-        }
-
+                       text-align: center;
+}
         .why-copy {
-          max-width: 900px;
-          color: #475569;
-          font-size: 18px;
-          line-height: 1.85;
-          margin: 0 0 16px;
-        }
+  max-width: 900px;
+  color: #475569;
+  font-size: 18px;
+  line-height: 1.85;
+  margin: 0 auto 16px;
+  text-align: center;
+}
 
         .footer-section {
           padding: 18px 0 70px;
@@ -586,7 +588,8 @@ export default function App() {
           .preview-card,
           .card {
             border-radius: 22px;
-          }
+           text-align: center;
+}
         }
       `}</style>
 
