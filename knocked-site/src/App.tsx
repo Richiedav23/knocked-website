@@ -312,7 +312,7 @@ export default function App() {
         }
 
         .section {
-          padding: 18px 0 34px;
+          padding: 18px 0 28px;
         }
 
         .section-eyebrow {
@@ -325,7 +325,7 @@ export default function App() {
         }
 
         .section-title {
-          margin: 0 0 22px;
+          margin: 0 0 14px;
           font-size: 40px;
           line-height: 1.08;
           letter-spacing: -0.04em;
@@ -339,7 +339,7 @@ export default function App() {
           border-radius: 34px;
           padding: 46px;
           box-shadow: 0 34px 80px rgba(15, 23, 42, 0.22);
-          margin-bottom: 34px;
+          margin-bottom: 18px;
         }
 
         .problem-section .section-eyebrow {
@@ -365,7 +365,7 @@ export default function App() {
         .features-grid,
         .audience-grid {
           display: grid;
-          gap: 18px;
+          gap: 14px;
         }
 
         .cards-grid {
@@ -381,7 +381,7 @@ export default function App() {
           background: rgba(255,255,255,0.94);
           border: 1px solid #e2e8f0;
           border-radius: 24px;
-          padding: 24px;
+          padding: 20px;
           box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
           transition: all 0.25s ease;
           transform: translateY(0);
@@ -419,7 +419,7 @@ export default function App() {
           background: rgba(255,255,255,0.92);
           border: 1px solid #e2e8f0;
           border-radius: 30px;
-          padding: 36px;
+          padding: 28px;
           box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
         }
 
