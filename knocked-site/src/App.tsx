@@ -802,10 +802,12 @@ text-align: center;
             <div className="footer-panel">
               <h2>Building Knocked for safer communication across school and sport.</h2>
 
-              <p>
-                Want to pilot Knocked, explore a partnership, or see the product
-                vision in more detail? Let’s have a conversation.
-              </p>
+<p>
+  Interested in piloting Knocked?<br />
+  Exploring a partnership?<br />
+  Or want to see it in action?<br /><br />
+  <strong>Let’s have a conversation.</strong>
+</p>
 
               <a className="footer-cta" href="mailto:richard@knockd.co.uk">
                 richard@knockd.co.uk
