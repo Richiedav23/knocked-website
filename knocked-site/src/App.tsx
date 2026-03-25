@@ -309,6 +309,7 @@ export default function App() {
               margin: "0 0 14px",
               fontSize: "36px",
               lineHeight: 1.1,
+              color: "white",
               letterSpacing: "-0.03em",
             }}
           >
@@ -320,7 +321,7 @@ export default function App() {
               maxWidth: "900px",
               fontSize: "18px",
               lineHeight: 1.8,
-              color: "#cbd5e1",
+              color: "#f1f5f9",
             }}
           >
             A child can be injured at a sports club on Saturday, turn up to
@@ -496,7 +497,7 @@ export default function App() {
             </p>
 
             <a
-              href="mailto:hello@knocked.app"
+              href="mailto:richard@knockd.co.uk"
               style={{
                 textDecoration: "none",
                 display: "inline-block",
@@ -508,7 +509,7 @@ export default function App() {
                 boxShadow: "0 14px 30px rgba(15, 23, 42, 0.16)",
               }}
             >
-              hello@knocked.app
+              richard@knockd.co.uk
             </a>
           </div>
         </section>
