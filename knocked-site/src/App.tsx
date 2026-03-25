@@ -52,34 +52,43 @@ export default function App() {
             padding: "8px 0 24px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+            }}
+          >
             <div
               style={{
-                width: "42px",
-                height: "42px",
+                width: "44px",
+                height: "44px",
                 borderRadius: "14px",
-                background: "linear-gradient(135deg, #111827, #334155)",
-                color: "white",
+                background: "linear-gradient(135deg, #0f172a, #2563eb)",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontWeight: 700,
+                color: "white",
+                fontWeight: 800,
                 fontSize: "18px",
-                boxShadow: "0 10px 25px rgba(15, 23, 42, 0.18)",
+                boxShadow: "0 10px 25px rgba(37, 99, 235, 0.25)",
               }}
             >
               K
             </div>
-            <div>
-              <div style={{ fontSize: "22px", fontWeight: 700 }}>Knocked</div>
-              <div style={{ fontSize: "13px", color: "#64748b" }}>
-                Child injury visibility, made simple
+
+            <div style={{ lineHeight: 1 }}>
+              <div style={{ fontSize: "20px", fontWeight: 800 }}>
+                Knocked
+              </div>
+              <div style={{ fontSize: "12px", color: "#64748b" }}>
+                Injury visibility
               </div>
             </div>
           </div>
 
           <a
-            href="mailto:hello@knocked.app"
+            href="mailto:richard@knockd.co.uk"
             style={{
               textDecoration: "none",
               background: "#0f172a",
@@ -148,7 +157,7 @@ export default function App() {
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
               <a
-                href="mailto:hello@knocked.app"
+                href="mailto:richard@knockd.co.uk"
                 style={{
                   textDecoration: "none",
                   background: "linear-gradient(135deg, #111827, #1e293b)",
@@ -321,7 +330,7 @@ export default function App() {
               maxWidth: "900px",
               fontSize: "18px",
               lineHeight: 1.8,
-             "color: "#f8fafc"",
+              color: "#f8fafc",
             }}
           >
             A child can be injured at a sports club on Saturday, turn up to
