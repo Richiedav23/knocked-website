@@ -146,13 +146,13 @@ export default function App() {
         }
 
         .hero h1 {
-  margin: 0 0 20px;
-  font-size: 68px;
-  line-height: 0.98;
-  letter-spacing: -0.05em;
-  max-width: 780px;
-  color: #020617;
-}
+          margin: 0 0 20px;
+          font-size: 68px;
+          line-height: 0.98;
+          letter-spacing: -0.05em;
+          max-width: 780px;
+          color: #020617;
+        }
 
         .hero-copy {
           font-size: 20px;
@@ -182,7 +182,7 @@ export default function App() {
         }
 
         .secondary-cta {
-          background: rgba(255,255,255,0.85);
+          background: rgba(255,255,255,0.92);
           color: #0f172a;
           padding: 15px 24px;
           border-radius: 18px;
@@ -213,8 +213,8 @@ export default function App() {
         }
 
         .preview-card {
-          background: rgba(255,255,255,0.78);
-          border: 1px solid rgba(226,232,240,0.9);
+          background: rgba(255,255,255,0.88);
+          border: 1px solid rgba(226,232,240,0.95);
           border-radius: 30px;
           padding: 28px;
           box-shadow: 0 28px 70px rgba(15, 23, 42, 0.10);
@@ -344,6 +344,7 @@ export default function App() {
           font-size: 38px;
           line-height: 1.08;
           max-width: 900px;
+          color: white;
         }
 
         .problem-section p {
@@ -358,13 +359,13 @@ export default function App() {
           padding: 34px 0 20px;
         }
 
-       .features h2 {
-  margin: 0 0 26px;
-  font-size: 42px;
-  line-height: 1.08;
-  max-width: 780px;
-  color: #0f172a;
-}
+        .features h2 {
+          margin: 0 0 26px;
+          font-size: 42px;
+          line-height: 1.08;
+          max-width: 780px;
+          color: #0f172a;
+        }
 
         .features-grid,
         .steps-grid {
@@ -452,8 +453,7 @@ export default function App() {
         }
 
         .footer-panel {
-          .footer-panel {
-  background: linear-gradient(135deg, #cfe3ff, #ffffff 50%, #e0f2fe);
+          background: linear-gradient(135deg, #cfe3ff, #ffffff 50%, #e0f2fe);
           border: 1px solid #bfdbfe;
           border-radius: 32px;
           padding: 44px;
@@ -461,13 +461,12 @@ export default function App() {
           box-shadow: 0 20px 40px rgba(29, 78, 216, 0.08);
         }
 
-.footer-panel h2 {
-  margin: 0 0 12px;
-  font-size: 40px;
-  line-height: 1.08;
-  color: #0f172a;
-}
-
+        .footer-panel h2 {
+          margin: 0 0 12px;
+          font-size: 40px;
+          line-height: 1.08;
+          color: #0f172a;
+        }
 
         .footer-panel p {
           max-width: 760px;
@@ -508,11 +507,7 @@ export default function App() {
           .container {
             padding: 18px;
           }
-  .features h2,
-  .footer-panel h2,
-  .hero h1 {
-    color: #020617;
-  }
+
           .header {
             flex-direction: column;
             align-items: flex-start;
