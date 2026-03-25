@@ -806,7 +806,7 @@ text-align: center;
   Interested in piloting Knocked?<br />
   Exploring a partnership?<br />
   Or want to see it in action?<br /><br />
-  <strong>Let’s have a conversation.</strong>
+  <strong>Let’s have a conversation today.</strong>
 </p>
 
               <a className="footer-cta" href="mailto:richard@knockd.co.uk">
