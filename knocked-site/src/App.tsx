@@ -187,7 +187,7 @@ export default function App() {
                 maxWidth: "780px",
               }}
             >
-              A safer, smarter way to track child injuries across school and sport.
+              A safer way to manage child injuries across school and sport.
             </h1>
 
             <p
@@ -236,7 +236,16 @@ export default function App() {
                 See how it works
               </a>
             </div>
-
+<div
+  style={{
+    marginTop: "20px",
+    color: "#64748b",
+    fontSize: "14px",
+    fontWeight: 600,
+  }}
+>
+  Trusted by schools and clubs improving safeguarding standards.
+</div>
             <div
               style={{
                 display: "flex",
@@ -408,6 +417,7 @@ export default function App() {
             borderRadius: "34px",
             padding: "46px",
             boxShadow: "0 34px 80px rgba(15, 23, 42, 0.22)",
+              transition: "all 0.2s ease",
             marginBottom: "32px",
           }}
         >
@@ -628,19 +638,30 @@ export default function App() {
               vision in more detail? Let’s have a conversation.
             </p>
 
-            <a
-              href="mailto:richard@knockd.co.uk"
-              style={{
-                textDecoration: "none",
-                display: "inline-block",
-                background: "linear-gradient(135deg, #0f172a, #1d4ed8)",
-                color: "white",
-                padding: "15px 26px",
-                borderRadius: "18px",
-                fontWeight: 800,
-                boxShadow: "0 14px 30px rgba(29, 78, 216, 0.16)",
-              }}
-            >
+             <a
+  href="mailto:richard@knockd.co.uk"
+  style={{
+    textDecoration: "none",
+    background: "linear-gradient(135deg, #0f172a, #1d4ed8)",
+    color: "white",
+    padding: "15px 24px",
+    borderRadius: "18px",
+    fontWeight: 800,
+    boxShadow: "0 16px 35px rgba(29, 78, 216, 0.22)",
+    transition: "all 0.2s ease",
+    transform: "translateY(0)",
+  }}
+  onMouseEnter={(e) => {
+    e.currentTarget.style.transform = "translateY(-2px)";
+    e.currentTarget.style.boxShadow =
+      "0 20px 45px rgba(29, 78, 216, 0.35)";
+  }}
+  onMouseLeave={(e) => {
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow =
+      "0 16px 35px rgba(29, 78, 216, 0.22)";
+  }}
+>
               richard@knockd.co.uk
             </a>
           </div>
