@@ -321,7 +321,7 @@ export default function App() {
               maxWidth: "900px",
               fontSize: "18px",
               lineHeight: 1.8,
-              color: "#f1f5f9",
+             "color: "#f8fafc"",
             }}
           >
             A child can be injured at a sports club on Saturday, turn up to
