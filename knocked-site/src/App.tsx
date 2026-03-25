@@ -146,12 +146,13 @@ export default function App() {
         }
 
         .hero h1 {
-          margin: 0 0 20px;
-          font-size: 68px;
-          line-height: 0.98;
-          letter-spacing: -0.05em;
-          max-width: 780px;
-        }
+  margin: 0 0 20px;
+  font-size: 68px;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  max-width: 780px;
+  color: #020617;
+}
 
         .hero-copy {
           font-size: 20px;
@@ -357,12 +358,13 @@ export default function App() {
           padding: 34px 0 20px;
         }
 
-        .features h2 {
-          margin: 0 0 26px;
-          font-size: 42px;
-          line-height: 1.08;
-          max-width: 780px;
-        }
+       .features h2 {
+  margin: 0 0 26px;
+  font-size: 42px;
+  line-height: 1.08;
+  max-width: 780px;
+  color: #0f172a;
+}
 
         .features-grid,
         .steps-grid {
@@ -372,7 +374,7 @@ export default function App() {
         }
 
         .feature-card {
-          background: rgba(255,255,255,0.86);
+          background: rgba(255,255,255,0.96);
           border: 1px solid #e2e8f0;
           border-radius: 26px;
           padding: 24px;
@@ -450,7 +452,8 @@ export default function App() {
         }
 
         .footer-panel {
-          background: linear-gradient(135deg, #dbeafe, #ffffff 55%, #eff6ff);
+          .footer-panel {
+  background: linear-gradient(135deg, #cfe3ff, #ffffff 50%, #e0f2fe);
           border: 1px solid #bfdbfe;
           border-radius: 32px;
           padding: 44px;
@@ -458,11 +461,13 @@ export default function App() {
           box-shadow: 0 20px 40px rgba(29, 78, 216, 0.08);
         }
 
-        .footer-panel h2 {
-          margin: 0 0 12px;
-          font-size: 40px;
-          line-height: 1.08;
-        }
+.footer-panel h2 {
+  margin: 0 0 12px;
+  font-size: 40px;
+  line-height: 1.08;
+  color: #0f172a;
+}
+
 
         .footer-panel p {
           max-width: 760px;
@@ -503,7 +508,11 @@ export default function App() {
           .container {
             padding: 18px;
           }
-
+  .features h2,
+  .footer-panel h2,
+  .hero h1 {
+    color: #020617;
+  }
           .header {
             flex-direction: column;
             align-items: flex-start;
