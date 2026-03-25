@@ -1,4 +1,4 @@
-fexport default function App() {
+export default function App() {
   const features = [
     {
       title: "Shared injury visibility",
