@@ -54,15 +54,21 @@ export default function App() {
           text-decoration: none;
         }
 
-        .page {
+          .page {
           min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
         }
 
         .container {
-          max-width: 1180px;
-          margin: 0 auto;
-          padding: 24px;
-        }
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+}
 
         .header {
           display: flex;
@@ -274,7 +280,7 @@ export default function App() {
         }
 
         .incident-copy {
-        font-size 14px;
+        font-size: 14px;
           color: #475569;
           line-height: 1.6;
         }
@@ -354,6 +360,7 @@ export default function App() {
   max-width: 900px;
   margin: 0 auto 14px;
   text-align: center;
+      }
 
 .problem-copy {
 margin:0 auto;
@@ -368,6 +375,8 @@ text-align: center;
 .cards-grid,
 .features-grid,
 .audience-grid {
+display: grid;
+  gap: 24px;
   margin-top: 24px;
 }
         .cards-grid {
@@ -480,7 +489,7 @@ text-align: center;
           }
 
           .hero h1 {
-            font-size: 52px;
+            font-size: 44px;
             max-width: none;
           }
 
@@ -594,7 +603,7 @@ text-align: center;
 
           .hero h1 {
             font-size: 28px;
-            line-height; 1.04;
+            line-height: 1.04;
           }
 
           .pill {
