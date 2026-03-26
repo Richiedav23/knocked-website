@@ -153,18 +153,18 @@ export default function App() {
 
         .hero h1 {
           margin: 0 0 20px;
-          font-size: 64px;
-          line-height: 0.98;
+          font-size: 32px;
+          line-height: 1.02;
           letter-spacing: -0.05em;
-          max-width: 760px;
+          max-width: 100%;
           color: #020617;
         }
 
         .hero-copy {
-          font-size: 20px;
-          line-height: 1.8;
+          font-size: 16px;
+          line-height: 1.65;
           color: #475569;
-          max-width: 720px;
+          max-width: 100%;
           margin-bottom: 28px;
         }
 
@@ -222,7 +222,7 @@ export default function App() {
           background: rgba(255,255,255,0.9);
           border: 1px solid rgba(226,232,240,0.95);
           border-radius: 30px;
-          padding: 28px;
+          padding: 18px;
           box-shadow: 0 28px 70px rgba(15, 23, 42, 0.10);
           backdrop-filter: blur(10px);
         }
@@ -243,7 +243,7 @@ export default function App() {
         }
 
         .preview-title {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 800;
           color: #0f172a;
         }
@@ -251,9 +251,9 @@ export default function App() {
         .status-pill {
           background: #eff6ff;
           color: #1d4ed8;
-          padding: 10px 12px;
+          padding: 8px 10px;
           border-radius: 14px;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 800;
           border: 1px solid #bfdbfe;
           white-space: nowrap;
@@ -274,8 +274,9 @@ export default function App() {
         }
 
         .incident-copy {
+        font-size 14px;
           color: #475569;
-          line-height: 1.7;
+          line-height: 1.6;
         }
 
         .split-grid {
@@ -287,7 +288,7 @@ export default function App() {
         .mini-card {
           border-radius: 20px;
           background: white;
-          padding: 16px;
+          padding: 14px;
           border: 1px solid #e2e8f0;
         }
 
@@ -509,12 +510,13 @@ text-align: center;
           }
 
           .hero {
-            padding: 18px 0 44px;
+            padding: 18px 0 36px;
           }
 
           .hero h1 {
-            font-size: 40px;
+            font-size: 32px;
             line-height: 1.02;
+            max-width: 100%;
           }
 
           .hero-copy,
@@ -523,6 +525,7 @@ text-align: center;
           .problem-copy {
             font-size: 16px;
             line-height: 1.7;
+            max-width: 100%;
           }
 
           .cta-row {
@@ -539,19 +542,35 @@ text-align: center;
           .problem-section,
           .why-panel,
           .footer-panel {
-            padding: 22px;
+            padding: 18px;
           }
 
+          .preview-title {
+  font-size: 16px;
+}
           .preview-top {
             flex-direction: column;
             align-items: flex-start;
           }
+
+          .incident-copy {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.status-pill {
+  font-size: 11px;
+  padding: 8px 10px;
+}
 
           .split-grid,
           .features-grid,
           .audience-grid {
             grid-template-columns: 1fr;
           }
+            .mini-card {
+  padding: 14px;
+}
 
           .section-title,
           .problem-section .section-title,
@@ -574,21 +593,32 @@ text-align: center;
           }
 
           .hero h1 {
-            font-size: 34px;
+            font-size: 28px;
+            line-height; 1.04;
           }
 
           .pill {
-            font-size: 12px;
-            padding: 9px 12px;
+            font-size: 11px;
+            padding: 8px 10px;
           }
 
+.preview-card {
+  padding: 16px;
+}
+
+  .preview-title {
+  font-size: 15px;
+}
+
+.incident-title {
+  font-size: 15px;
+}
           .problem-section,
           .why-panel,
           .footer-panel,
           .preview-card,
           .card {
             border-radius: 22px;
-           text-align: center;
 }
         }
       `}</style>
