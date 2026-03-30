@@ -60,14 +60,14 @@ export default function App() {
   display: flex;
   justify-content: center;
 }
-        }
 
         .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  padding: 24px;
+  padding: 0 32px;
+  box-sizing: border-box;
 }
 
         .header {
@@ -139,7 +139,7 @@ export default function App() {
           grid-template-columns: 1.1fr 0.9fr;
           gap: 34px;
           align-items: center;
-          padding: 34px 0 68px;
+          padding: 56px 0 72px;
         }
 
         .pill {
@@ -159,7 +159,7 @@ export default function App() {
 
         .hero h1 {
           margin: 0 0 20px;
-          font-size: 32px;
+          font-size: 56px;
           line-height: 1.02;
           letter-spacing: -0.05em;
           max-width: 100%;
@@ -490,7 +490,6 @@ display: grid;
 
           .hero h1 {
             font-size: 44px;
-            max-width: none;
           }
 
           .cards-grid {
@@ -501,7 +500,26 @@ display: grid;
           .audience-grid {
             grid-template-columns: repeat(2, 1fr);
           }
-        }
+      }
+
+          @media (min-width: 1025px) {
+  .hero h1 {
+    max-width: 720px;
+    line-height: 1.1;
+  }
+
+  .hero-copy {
+    max-width: 640px;
+  }
+
+  .section-title {
+    max-width: 800px;
+  }
+
+  .problem-copy {
+    max-width: 700px;
+  }
+}
 
         @media (max-width: 768px) {
           .container {
@@ -585,6 +603,7 @@ display: grid;
           .problem-section .section-title,
           .footer-panel h2 {
             font-size: 30px;
+            max-width: 800px
           }
 
           .hero-tags {
