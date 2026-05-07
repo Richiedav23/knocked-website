@@ -677,7 +677,7 @@ display: grid;
       <div>
         <div style={{ marginBottom: "20px" }}>
       <img 
-  src="/knockd-icon.png"
+  src="/knockd1-icon.png"
   alt="Knockd"
   style={{ 
     height: "56px", 
