@@ -667,8 +667,18 @@ display: grid;
         Request a demo
       </a>
     </header>
-          <section className="hero">
-            <div>
+          
+            <section className="hero">
+  <div>
+
+    <div style={{ marginBottom: "20px" }}>
+      <img 
+        src="/knockd-logo1.png"
+        alt="Knockd"
+        style={{ width: "180px", opacity: 0.95 }}
+      />
+    </div>
+          
               <div className="pill">Built for schools, clubs, and parents</div>
 
               <h1>A safer way to manage child injuries across school and sport.</h1>
