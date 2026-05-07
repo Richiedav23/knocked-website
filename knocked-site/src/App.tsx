@@ -661,9 +661,10 @@ display: grid;
   src="/knockd1-logo.png"
   alt="Knockd"
   style={{ 
-    height: "44px", 
-    width: "auto", 
-    opacity: 0.95 
+  width: "100%", 
+      maxWidth: "460px", 
+      height: "auto",
+      opacity: 0.95
   }}
 />
 </div>
