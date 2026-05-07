@@ -652,39 +652,40 @@ display: grid;
         }
       `}</style>
 
-<div className="page">
-  <div className="container">
+<header 
+  className="header"
+  style={{
+    display: "grid",
+    gridTemplateColumns: "1fr auto 1fr",
+    alignItems: "center",
+    paddingTop: "32px"
+  }}
+>
 
-    <header 
-      className="header" 
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between"
+  {/* Left spacer */}
+  <div />
+
+  {/* Center logo */}
+  <div style={{ display: "flex", justifyContent: "center" }}>
+    <img 
+      src="/knockd2-logo.png"
+      alt="Knockd"
+      style={{ 
+        width: "100%", 
+        maxWidth: "460px",
+        height: "auto",
+        opacity: 0.95
       }}
-    >
+    />
+  </div>
 
-      <div className="logo-wrap">
-        <img 
-          src="/knockd2-logo.png"
-          alt="Knockd"
-          style={{ 
-            width: "100%", 
-            maxWidth: "460px", 
-            height: "auto",
-            opacity: 0.95
-          }}
-        />
-      </div>
-
-      <a 
-        className="top-cta" 
-        href="mailto:richard@knockd.co.uk"
-      >
-        Request a demo
-      </a>
-
-    </header>
+  {/* Right button */}
+  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+    <a className="top-cta" href="mailto:richard@knockd.co.uk">
+      Request a demo
+    </a>
+  </div>
+</header>
 
     <section className="hero">
       <div>
