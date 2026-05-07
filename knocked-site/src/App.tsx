@@ -33,12 +33,6 @@ export default function App() {
 
 return (
   <>
-    <div style={{ textAlign: "center", marginTop: "0px", marginBottom: "40px" }}>
-      <img src="/knock-logo.png" alt="Knockd" style={{ width: "340px" }} />
-      <p style={{ marginTop: "12px", opacity: 0.75, fontSize: "16px" }}>
-        Injury visibility for schools, clubs & parents
-      </p>
-    </div>
 
     <style>{`
       * {
@@ -663,7 +657,7 @@ display: grid;
     <header className="header">
       <div className="logo-wrap">
         <img 
-          src="/knock-logo.png" 
+          src="/knock-icon.png" 
           alt="Knockd"
           style={{ height: "44px", width: "auto" }}
         />
@@ -824,7 +818,24 @@ display: grid;
               ))}
             </div>
           </section>
-
+    
+    <div style={{ 
+            textAlign: "center", 
+            margin: "50px 0 20px" 
+          }}>
+            <img 
+              src="/knock-logo.png" 
+              alt="Knockd"
+              style={{ width: "240px", opacity: 0.95 }}
+            />
+            <p style={{ 
+              marginTop: "12px", 
+              fontSize: "14px", 
+              color: "#64748b" 
+            }}>
+              Injury visibility for schools, clubs & parents
+            </p>
+          </div>
           <section className="footer-section">
             <div className="footer-panel">
               <h2>Building Knocked for safer communication across school and sport.</h2>
