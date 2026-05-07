@@ -654,27 +654,36 @@ display: grid;
 
 <div className="page">
   <div className="container">
-    <header className="header">
+
+    <header 
+      className="header" 
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between"
+      }}
+    >
+
       <div className="logo-wrap">
-      
-<div style={{ display: "flex", justifyContent: "center" }}>
-<img 
-  src="/knockd2-logo.png"
-  alt="Knockd"
-  style={{ 
-    width: "100%", 
-    maxWidth: "460px", 
-    height: "200px",
-    opacity: 0.95,
-    display: "block",
-    margin: "0 auto"
-  }}
-/>
-</div>
-</div>
-      <a className="top-cta" href="mailto:richard@knockd.co.uk">
+        <img 
+          src="/knockd2-logo.png"
+          alt="Knockd"
+          style={{ 
+            width: "100%", 
+            maxWidth: "460px", 
+            height: "auto",
+            opacity: 0.95
+          }}
+        />
+      </div>
+
+      <a 
+        className="top-cta" 
+        href="mailto:richard@knockd.co.uk"
+      >
         Request a demo
       </a>
+
     </header>
 
     <section className="hero">
