@@ -657,7 +657,7 @@ display: grid;
     <header className="header">
       <div className="logo-wrap">
         <img 
-          src="/knockd-icon.png" 
+          src="/knockd1-logo.png" 
           alt="Knockd"
           style={{ height: "44px", width: "auto" }}
         />
@@ -667,22 +667,21 @@ display: grid;
         Request a demo
       </a>
     </header>
-          
-            <section className="hero">
-  <div>
 
-    <div style={{ marginBottom: "20px" }}>
-      <img 
-        src="/knockd-logo1.png"
-        alt="Knockd"
-        style={{ width: "180px", opacity: 0.95 }}
-      />
-    </div>
-          
-              <div className="pill">Built for schools, clubs, and parents</div>
+    <section className="hero">
+      <div>
+        <div style={{ marginBottom: "20px" }}>
+          <img 
+            src="/knockd-logo1.png"
+            alt="Knockd"
+            style={{ width: "180px", opacity: 0.95 }}
+          />
+        </div>
 
-              <h1>A safer way to manage child injuries across school and sport.</h1>
+        <div className="pill">Built for schools, clubs, and parents</div>
 
+        <h1>A safer way to manage child injuries across school and sport.</h1>
+        
               <p className="hero-copy">
                 Knocked helps schools, sports clubs, and parents stay aligned on
                 injuries, recovery, and return-to-play decisions — with clearer
