@@ -657,7 +657,7 @@ display: grid;
     <header className="header">
       <div className="logo-wrap">
         <img 
-          src="/knock-icon.png" 
+          src="/knockd-icon.png" 
           alt="Knockd"
           style={{ height: "44px", width: "auto" }}
         />
