@@ -658,7 +658,7 @@ display: grid;
     display: "grid",
     gridTemplateColumns: "1fr auto 1fr",
     alignItems: "center",
-    paddingTop: "32px"
+    paddingTop: "10px"
   }}
 >
 
