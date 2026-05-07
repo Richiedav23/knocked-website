@@ -659,7 +659,7 @@ display: grid;
       
 <div style={{ display: "flex", justifyContent: "center" }}>
   <img 
-    src="/knockd2-logo.png"
+    src="/knockd2-logo"
     alt="Knockd"
     style={{ 
       width: "100%", 
@@ -844,7 +844,7 @@ display: grid;
             margin: "50px 0 20px" 
           }}>
             <img 
-              src="/knockd2-logo.png" 
+              src="/knockd2-logo" 
               alt="Knockd"
               style={{ width: "240px", opacity: 0.95 }}
             />
