@@ -31,24 +31,31 @@ export default function App() {
     "Coaches and safeguarding leads",
   ];
 
-  return (
-    <>
-      <style>{`
-        * {
-          box-sizing: border-box;
-        }
+return (
+  <>
+    <div style={{ textAlign: "center", marginTop: "60px", marginBottom: "40px" }}>
+      <img src="/knock-logo.png" alt="Knockd" style={{ width: "340px" }} />
+      <p style={{ marginTop: "12px", opacity: 0.75, fontSize: "16px" }}>
+        Injury visibility for schools, clubs & parents
+      </p>
+    </div>
 
-        html, body, #root {
-          margin: 0;
-          padding: 0;
-          min-height: 100%;
-        }
+    <style>{`
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-          font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          background: radial-gradient(circle at top left, #dbeafe 0%, #f8fbff 28%, #ffffff 60%, #f1f5f9 100%);
-          color: #0f172a;
-        }
+      html, body, #root {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+      }
+
+      body {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top left, #dbeafe 0%, #f8fbff 28%, #ffffff 60%, #f1f5f9 100%);
+        color: #0f172a;
+      }
 
         a {
           text-decoration: none;
