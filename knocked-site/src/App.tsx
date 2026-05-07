@@ -676,11 +676,15 @@ display: grid;
     <section className="hero">
       <div>
         <div style={{ marginBottom: "20px" }}>
-          <img 
-            src="/knockd1-logo.png"
-            alt="Knockd"
-            style={{ width: "180px", opacity: 0.95 }}
-          />
+      <img 
+  src="/knockd-icon.png"
+  alt="Knockd"
+  style={{ 
+    height: "56px", 
+    width: "auto",
+    opacity: 0.95
+  }}
+/>
         </div>
 
         <div className="pill">Built for schools, clubs, and parents</div>
