@@ -676,7 +676,7 @@ display: grid;
       <div>
         <div style={{ marginBottom: "20px" }}>
           <img 
-            src="/knockd-logo1.png"
+            src="/knockd1-logo.png"
             alt="Knockd"
             style={{ width: "180px", opacity: 0.95 }}
           />
