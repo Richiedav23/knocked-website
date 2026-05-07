@@ -33,7 +33,7 @@ export default function App() {
 
 return (
   <>
-    <div style={{ textAlign: "center", marginTop: "60px", marginBottom: "40px" }}>
+    <div style={{ textAlign: "center", marginTop: "0px", marginBottom: "40px" }}>
       <img src="/knock-logo.png" alt="Knockd" style={{ width: "340px" }} />
       <p style={{ marginTop: "12px", opacity: 0.75, fontSize: "16px" }}>
         Injury visibility for schools, clubs & parents
@@ -658,59 +658,21 @@ display: grid;
         }
       `}</style>
 
-      <div className="page">
-        <div className="container">
-          <header className="header">
-            <div className="logo-wrap">
-              <svg
-                className="logo-box"
-                viewBox="0 0 64 64"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{
-                  borderRadius: 18,
-                  boxShadow: "0 16px 35px rgba(37, 99, 235, 0.22)",
-                }}
-              >
-                <rect width="64" height="64" rx="18" fill="url(#bg)" />
-                <path
-                  d="M32 14C25.5 19.2 20.2 20.8 15 21.6C15 37.5 21.5 47.7 32 51.5C42.5 47.7 49 37.5 49 21.6C43.8 20.8 38.5 19.2 32 14Z"
-                  fill="white"
-                  fillOpacity="0.18"
-                />
-                <path
-                  d="M22 34.5H27.5L31 28L35 39L38 33.5H42"
-                  stroke="white"
-                  strokeWidth="3.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M32 14C25.5 19.2 20.2 20.8 15 21.6C15 37.5 21.5 47.7 32 51.5C42.5 47.7 49 37.5 49 21.6C43.8 20.8 38.5 19.2 32 14Z"
-                  stroke="white"
-                  strokeOpacity="0.7"
-                  strokeWidth="1.5"
-                />
-                <defs>
-                  <linearGradient id="bg" x1="8" y1="6" x2="57" y2="58" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#0F172A" />
-                    <stop offset="0.55" stopColor="#1D4ED8" />
-                    <stop offset="1" stopColor="#38BDF8" />
-                  </linearGradient>
-                </defs>
-              </svg>
+<div className="page">
+  <div className="container">
+    <header className="header">
+      <div className="logo-wrap">
+        <img 
+          src="/knock-logo.png" 
+          alt="Knockd"
+          style={{ height: "44px", width: "auto" }}
+        />
+      </div>
 
-              <div style={{ lineHeight: 1 }}>
-                <div className="brand-name">Knocked</div>
-                <div className="brand-sub">Injury visibility</div>
-              </div>
-            </div>
-
-            <a className="top-cta" href="mailto:richard@knockd.co.uk">
-              Request a demo
-            </a>
-          </header>
-
+      <a className="top-cta" href="mailto:richard@knockd.co.uk">
+        Request a demo
+      </a>
+    </header>
           <section className="hero">
             <div>
               <div className="pill">Built for schools, clubs, and parents</div>
