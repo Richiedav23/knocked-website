@@ -657,16 +657,18 @@ display: grid;
     <header className="header">
       <div className="logo-wrap">
       
-<img 
-  src="/knockd1-logo.png"
-  alt="Knockd"
-  style={{ 
-  width: "100%", 
+<div style={{ display: "flex", justifyContent: "center" }}>
+  <img 
+    src="/knockd2-logo.png"
+    alt="Knockd"
+    style={{ 
+      width: "100%", 
       maxWidth: "460px", 
       height: "auto",
       opacity: 0.95
-  }}
-/>
+    }}
+  />
+</div>
 </div>
       <a className="top-cta" href="mailto:richard@knockd.co.uk">
         Request a demo
@@ -842,7 +844,7 @@ display: grid;
             margin: "50px 0 20px" 
           }}>
             <img 
-              src="/knockd1-logo.png" 
+              src="/knockd2-logo.png" 
               alt="Knockd"
               style={{ width: "240px", opacity: 0.95 }}
             />
