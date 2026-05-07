@@ -658,16 +658,18 @@ display: grid;
       <div className="logo-wrap">
       
 <div style={{ display: "flex", justifyContent: "center" }}>
-  <img 
-    src="/knockd2-logo"
-    alt="Knockd"
-    style={{ 
-      width: "100%", 
-      maxWidth: "460px", 
-      height: "auto",
-      opacity: 0.95
-    }}
-  />
+<img 
+  src="/knockd2-logo.png"
+  alt="Knockd"
+  style={{ 
+    width: "100%", 
+    maxWidth: "460px", 
+    height: "auto",
+    opacity: 0.95,
+    display: "block",
+    margin: "0 auto"
+  }}
+/>
 </div>
 </div>
       <a className="top-cta" href="mailto:richard@knockd.co.uk">
@@ -678,15 +680,7 @@ display: grid;
     <section className="hero">
       <div>
         <div style={{ marginBottom: "20px" }}>
-      <img 
-  src="/knockd1-icon.png"
-  alt="Knockd"
-  style={{ 
-    height: "56px", 
-    width: "auto",
-    opacity: 0.95
-  }}
-/>
+
         </div>
 
         <div className="pill">Built for schools, clubs, and parents</div>
@@ -844,7 +838,7 @@ display: grid;
             margin: "50px 0 20px" 
           }}>
             <img 
-              src="/knockd2-logo" 
+              src="/knockd2-logo.png" 
               alt="Knockd"
               style={{ width: "240px", opacity: 0.95 }}
             />
