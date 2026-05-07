@@ -656,13 +656,17 @@ display: grid;
   <div className="container">
     <header className="header">
       <div className="logo-wrap">
-        <img 
-          src="/knockd1-logo.png" 
-          alt="Knockd"
-          style={{ height: "44px", width: "auto" }}
-        />
-      </div>
-
+      
+<img 
+  src="/knockd1-logo.png"
+  alt="Knockd"
+  style={{ 
+    height: "44px", 
+    width: "auto", 
+    opacity: 0.95 
+  }}
+/>
+</div>
       <a className="top-cta" href="mailto:richard@knockd.co.uk">
         Request a demo
       </a>
