@@ -664,7 +664,7 @@ display: grid;
   style={{ 
     width: "100%", 
     maxWidth: "460px", 
-    height: "auto",
+    height: "200px",
     opacity: 0.95,
     display: "block",
     margin: "0 auto"
