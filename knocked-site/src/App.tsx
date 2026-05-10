@@ -610,8 +610,11 @@ display: grid;
           .hero-tags {
             gap: 10px 16px;
           }
-            .logo-wrap {
-    margin-top: 60px;
+          }
+          
+@media (min-width: 769px) {
+  .logo-wrap {
+    margin-top: 40px;
   }
 }
 
