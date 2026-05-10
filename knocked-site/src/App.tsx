@@ -527,14 +527,14 @@ display: grid;
             padding: 18px;
           }
 
- .header {
+.header {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   padding: 6px 18px 20px !important;
 }
 
-.logo-wrap img {
+.header img {
   max-width: 320px !important;
 }
 
