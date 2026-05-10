@@ -7,7 +7,7 @@ export default function App() {
     {
       title: "Clear injury timelines",
       text: "Every incident, update, and restriction recorded in one place for better continuity.",
-    },
+    }, gridTemplateColumns: "1fr auto 1fr"
     {
       title: "Safer return-to-play decisions",
       text: "Better information for PE, training, matches, and physical activity decisions.",
@@ -527,11 +527,16 @@ display: grid;
             padding: 18px;
           }
 
-          .header {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 6px 0 20px;
-          }
+ .header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 6px 18px 20px !important;
+}
+
+.logo-wrap img {
+  max-width: 320px !important;
+}
 
           .top-cta {
             width: 100%;
@@ -664,7 +669,10 @@ display: grid;
     display: "grid",
     gridTemplateColumns: "1fr auto 1fr",
     alignItems: "center",
-    paddingTop: "10px"
+    padding: "10px 32px 28px",
+    maxWidth: "1240px",
+    margin: "0 auto",
+    width: "100%"
   }}
 >
 
