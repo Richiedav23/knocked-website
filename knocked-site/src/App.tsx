@@ -7,7 +7,7 @@ export default function App() {
     {
       title: "Clear injury timelines",
       text: "Every incident, update, and restriction recorded in one place for better continuity.",
-    }, gridTemplateColumns: "1fr auto 1fr"
+   },
     {
       title: "Safer return-to-play decisions",
       text: "Better information for PE, training, matches, and physical activity decisions.",
