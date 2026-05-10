@@ -692,6 +692,9 @@ display: grid;
     </a>
   </div>
 </header>
+    
+    <div className="page">
+  <div className="container">
 
     <section className="hero">
       <div>
