@@ -610,7 +610,10 @@ display: grid;
           .hero-tags {
             gap: 10px 16px;
           }
-        }
+            .logo-wrap {
+    margin-top: 40px;
+  }
+}
 
         @media (max-width: 480px) {
           .brand-name {
