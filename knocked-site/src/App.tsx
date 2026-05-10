@@ -691,9 +691,10 @@ display: grid;
       Request a demo
     </a>
   </div>
+  
 </header>
-    
-    <div className="page">
+
+<div className="page">
   <div className="container">
 
     <section className="hero">
