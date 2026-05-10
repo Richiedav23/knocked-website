@@ -611,7 +611,7 @@ display: grid;
             gap: 10px 16px;
           }
             .logo-wrap {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 }
 
