@@ -29,12 +29,12 @@ const features = [
     "Important injury information sits across WhatsApp, email, memory, or not at all.",
   ];
 
-  const audience = [
-    "Primary and secondary schools",
-    "Grassroots football clubs",
-    "Youth sports organisations",
-    "Coaches and safeguarding leads",
-  ];
+const audience = [
+  { icon: "🏫", label: "Primary and secondary schools" },
+  { icon: "⚽", label: "Grassroots football clubs" },
+  { icon: "🏆", label: "Youth sports organisations" },
+  { icon: "📋", label: "Coaches and safeguarding leads" }, 
+]
 
 return (
   <>
@@ -858,16 +858,16 @@ display: grid;
             <h2 className="section-title">
               Created for the people responsible for managing real-world child safety.
             </h2>
-
-            <div className="audience-grid">
-              {audience.map((item) => (
-                <div key={item} className="card">
-                  <div className="card-title" style={{ marginBottom: 0 }}>{item}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-    
+            
+<div className="audience-grid">
+  {audience.map((item) => (
+    <div key={item.label} className="card">
+      <div style={{ fontSize: "28px", marginBottom: "8px" }}>{item.icon}</div>
+      <div className="card-title" style={{ marginBottom: 0 }}>{item.label}</div>
+    </div>
+  ))}
+</div>
+            
     <div style={{ 
             textAlign: "center", 
             margin: "50px 0 20px" 
