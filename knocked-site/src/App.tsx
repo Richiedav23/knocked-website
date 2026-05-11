@@ -1,6 +1,8 @@
 import { Eye, ClipboardList, ShieldCheck, Users } from "lucide-react";
 
 export default function App() {
+  
+    const features = [
   {
     icon: Eye,
     title: "Shared injury visibility",
