@@ -843,7 +843,6 @@ display: grid;
             <div className="features-grid">
               {features.map((feature) => (
                 <div key={feature.title} className="card">
-    <div className="feature-icon">
 <div style={{ fontSize: "32px", marginBottom: "18px" }}>
   {feature.icon}
 </div>
