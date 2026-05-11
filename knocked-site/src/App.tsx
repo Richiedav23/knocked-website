@@ -867,6 +867,7 @@ display: grid;
     </div>
   ))}
 </div>
+</section>
             
     <div style={{ 
             textAlign: "center", 
