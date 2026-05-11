@@ -844,7 +844,8 @@ display: grid;
               {features.map((feature) => (
                 <div key={feature.title} className="card">
     <div className="feature-icon">
-  <span style={{ fontSize: "28px" }}>{feature.icon}</span>
+<div style={{ fontSize: "32px", marginBottom: "18px" }}>
+  {feature.icon}
 </div>
                   <div className="card-title">{feature.title}</div>
                   <p className="card-copy">{feature.text}</p>
