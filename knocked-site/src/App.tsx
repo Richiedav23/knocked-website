@@ -870,13 +870,7 @@ display: grid;
               alt="Knockd"
               style={{ width: "240px", opacity: 0.95 }}
             />
-            <p style={{ 
-              marginTop: "12px", 
-              fontSize: "14px", 
-              color: "#64748b" 
-            }}>
-              Injury visibility for schools, clubs & parents
-            </p>
+     
           </div>
           <section className="footer-section">
             <div className="footer-panel">
