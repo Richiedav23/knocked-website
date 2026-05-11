@@ -1,25 +1,25 @@
-import { Eye, ClipboardList, ShieldCheck, Users } from "lucide-react";
+import { Eye, ClipboardList, ShieldCheck, Users }
 
 export default function App() {
   
-    const features = [
+const features = [
   {
-    icon: Eye,
+    icon: "👁️",
     title: "Shared injury visibility",
     text: "Schools, clubs, and parents can work from the same up-to-date injury context.",
   },
   {
-    icon: ClipboardList,
+    icon: "📋",
     title: "Clear injury timelines",
     text: "Every incident, update, and restriction recorded in one place for better continuity.",
   },
   {
-    icon: ShieldCheck,
+    icon: "🛡️",
     title: "Safer return-to-play decisions",
     text: "Better information for PE, training, matches, and physical activity decisions.",
   },
   {
-    icon: Users,
+    icon: "👨‍👩‍👧",
     title: "Built around the child",
     text: "The record follows the child across school and sport, not just one organisation.",
   },
@@ -845,8 +845,8 @@ display: grid;
             <div className="features-grid">
               {features.map((feature) => (
                 <div key={feature.title} className="card">
-                <div className="feature-icon">
-  <Icon size={28} strokeWidth={2.2} color="#2563eb" />
+    <div className="feature-icon">
+  <span style={{ fontSize: "28px" }}>{feature.icon}</span>
 </div>
                   <div className="card-title">{feature.title}</div>
                   <p className="card-copy">{feature.text}</p>
