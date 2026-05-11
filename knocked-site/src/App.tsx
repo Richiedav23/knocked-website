@@ -1,5 +1,3 @@
-import { Eye, ClipboardList, ShieldCheck, Users }
-
 export default function App() {
   
 const features = [
