@@ -1,22 +1,27 @@
+import { Eye, ClipboardList, ShieldCheck, Users } from "lucide-react";
+
 export default function App() {
-  const features = [
-    {
-      title: "Shared injury visibility",
-      text: "Schools, clubs, and parents can work from the same up-to-date injury context.",
-    },
-    {
-      title: "Clear injury timelines",
-      text: "Every incident, update, and restriction recorded in one place for better continuity.",
-   },
-    {
-      title: "Safer return-to-play decisions",
-      text: "Better information for PE, training, matches, and physical activity decisions.",
-    },
-    {
-      title: "Built around the child",
-      text: "The record follows the child across school and sport, not just one organisation.",
-    },
-  ];
+  {
+    icon: Eye,
+    title: "Shared injury visibility",
+    text: "Schools, clubs, and parents can work from the same up-to-date injury context.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Clear injury timelines",
+    text: "Every incident, update, and restriction recorded in one place for better continuity.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Safer return-to-play decisions",
+    text: "Better information for PE, training, matches, and physical activity decisions.",
+  },
+  {
+    icon: Users,
+    title: "Built around the child",
+    text: "The record follows the child across school and sport, not just one organisation.",
+  },
+];
 
   const scenarios = [
     "A child is injured at a weekend match and arrives at school on Monday — but nobody in PE knows.",
@@ -838,7 +843,9 @@ display: grid;
             <div className="features-grid">
               {features.map((feature) => (
                 <div key={feature.title} className="card">
-                  <div className="feature-icon" />
+                <div className="feature-icon">
+  <Icon size={28} strokeWidth={2.2} color="#2563eb" />
+</div>
                   <div className="card-title">{feature.title}</div>
                   <p className="card-copy">{feature.text}</p>
                 </div>
