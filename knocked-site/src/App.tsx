@@ -721,7 +721,7 @@ display: grid;
         <h1>A safer way to manage child injuries across school and sport.</h1>
         
               <p className="hero-copy">
-                Knocked helps schools, sports clubs, and parents stay aligned on
+                Knockd helps schools, sports clubs, and parents stay aligned on
                 injuries, recovery, and return-to-play decisions — with clearer
                 safeguarding, better communication, and less information falling
                 through the cracks.
@@ -835,7 +835,7 @@ display: grid;
           </section>
 
           <section id="features" className="section">
-            <div className="section-eyebrow">How Knocked reduces risk</div>
+            <div className="section-eyebrow">How Knockd reduces risk</div>
             <h2 className="section-title">
               Designed to give the right people the right context at the right time.
             </h2>
@@ -882,10 +882,10 @@ display: grid;
           </div>
           <section className="footer-section">
             <div className="footer-panel">
-              <h2>Building Knocked for safer communication across school and sport.</h2>
+              <h2>Building Knockd for safer communication across school and sport.</h2>
 
 <p>
-  Interested in piloting Knocked?<br />
+  Interested in piloting Knockd?<br />
   Exploring a partnership?<br />
   Or want to see it in action?<br /><br />
   <strong>Let’s have a conversation today.</strong>
