@@ -1046,9 +1046,9 @@ display: grid;
             margin: "50px 0 20px" 
           }}>
             <img 
-              src="/knockd2-logo.png" 
+              src="/knockd3-logo.png" 
               alt="Knockd"
-              style={{ width: "240px", opacity: 0.95 }}
+              style={{ width: "340px", opacity: 0.95 }}
             />
      
           </div>
