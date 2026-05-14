@@ -799,11 +799,11 @@ display: grid;
       Knockd aligns with where the sector is heading
     </h2>
 
-    <p className="why-copy">
-      Two major safeguarding frameworks — published within months of each other —
-      are highlighting the growing importance of the kind of visibility, reporting,
-      and safeguarding continuity Knockd is designed to support.
-    </p>
+<p className="why-copy">
+  The sector is demanding change. Schools, clubs, governing bodies and safeguarding
+  frameworks are all moving toward greater visibility, accountability and
+  safeguarding continuity across sport and education. Knockd was built for it.
+</p>
 
     <div
       style={{
