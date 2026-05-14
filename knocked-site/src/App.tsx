@@ -685,18 +685,38 @@ display: grid;
   <div />
 
   {/* Center logo */}
-  <div style={{ display: "flex", justifyContent: "center" }}>
-    <img 
-      src="/knockd2-logo.png"
-      alt="Knockd"
-      style={{ 
-        width: "100%", 
-        maxWidth: "460px",
-        height: "auto",
-        opacity: 0.95
-      }}
-    />
+<div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  }}
+>
+  <img 
+    src="/knockd3-logo.png"
+    alt="Knockd"
+    style={{ 
+      width: "100%", 
+      maxWidth: "460px",
+      height: "auto",
+      opacity: 0.95
+    }}
+  />
+
+  <div
+    style={{
+      marginTop: "10px",
+      fontSize: "13px",
+      fontWeight: 700,
+      letterSpacing: "0.18em",
+      textTransform: "uppercase",
+      color: "#64748b",
+      textAlign: "center"
+    }}
+  >
+    SAFEGUARDING VISIBILITY ACROSS SCHOOL & SPORT
   </div>
+</div>
 
   {/* Right button */}
   <div style={{ display: "flex", justifyContent: "flex-end" }}>
