@@ -788,6 +788,158 @@ display: grid;
             </div>
           </section>
 
+    <section className="section">
+  <div className="why-panel">
+    
+    <div className="section-eyebrow">
+      Built for this moment
+    </div>
+
+    <h2 className="section-title">
+      Knockd aligns with where the sector is heading
+    </h2>
+
+    <p className="why-copy">
+      Two major safeguarding frameworks — published within months of each other —
+      are highlighting the growing importance of the kind of visibility, reporting,
+      and safeguarding continuity Knockd is designed to support.
+    </p>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+        gap: "20px",
+        marginTop: "40px"
+      }}
+    >
+
+      <div className="card" style={{ textAlign: "left" }}>
+        <div
+          style={{
+            fontSize: "12px",
+            fontWeight: 800,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "#64748b",
+            marginBottom: "14px"
+          }}
+        >
+          FIFA · 2026
+        </div>
+
+        <div className="card-title">
+          FIFA Safeguarding Policy
+        </div>
+
+        <p className="card-copy">
+          FIFA’s updated safeguarding framework places stronger emphasis on
+          prevention, reporting mechanisms, accountability, and operational
+          safeguarding standards cascading throughout grassroots football.
+        </p>
+      </div>
+
+      <div className="card" style={{ textAlign: "left" }}>
+        <div
+          style={{
+            fontSize: "12px",
+            fontWeight: 800,
+            letterSpacing: "0.12em",
+            textTransform: "uppercase",
+            color: "#64748b",
+            marginBottom: "14px"
+          }}
+        >
+          UK SPORT · 2025
+        </div>
+
+        <div className="card-title">
+          The Safe Sport Report
+        </div>
+
+        <p className="card-copy">
+          The five UK Sports Councils called for a shift toward preventative
+          safeguarding, with stronger visibility, accessible reporting, and
+          accountability embedded across sport.
+        </p>
+      </div>
+
+    </div>
+
+    <div
+      style={{
+        marginTop: "38px",
+        paddingTop: "28px",
+        borderTop: "1px solid #e2e8f0"
+      }}
+    >
+
+      <div
+        style={{
+          fontWeight: 700,
+          marginBottom: "18px",
+          color: "#0f172a"
+        }}
+      >
+        Where Knockd supports these principles
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "12px",
+          justifyContent: "center"
+        }}
+      >
+
+        {[
+          "Real-time injury visibility",
+          "Timestamped audit trail",
+          "Parent transparency",
+          "Cross-setting communication",
+          "Duty of care documentation",
+          "Prevention & monitoring"
+        ].map((item) => (
+          <div
+            key={item}
+            style={{
+              padding: "10px 16px",
+              borderRadius: "999px",
+              background: "#f8fafc",
+              border: "1px solid #e2e8f0",
+              fontSize: "14px",
+              fontWeight: 700,
+              color: "#0f172a"
+            }}
+          >
+            {item}
+          </div>
+        ))}
+
+      </div>
+
+      <p
+        style={{
+          marginTop: "28px",
+          fontSize: "12px",
+          lineHeight: 1.7,
+          color: "#64748b",
+          maxWidth: "900px",
+          marginLeft: "auto",
+          marginRight: "auto"
+        }}
+      >
+        Knockd is an independent product. References to FIFA safeguarding
+        frameworks and UK Sport publications are provided for contextual
+        discussion only. Knockd is not endorsed by, affiliated with, or approved
+        by FIFA, UK Sport, or any associated governing body.
+      </p>
+
+    </div>
+  </div>
+</section>
+
           <section className="problem-section">
             <div className="section-eyebrow">The problem</div>
             <h2 className="section-title">
