@@ -988,23 +988,47 @@ display: grid;
             </div>
           </section>
 
-          <section className="section">
-            <div className="why-panel">
-              <div className="section-eyebrow">Why this matters</div>
-              <h2 className="section-title">
-                Duty of care does not stop at one organisation’s front door.
-              </h2>
-              <p className="why-copy">
-                Schools and clubs are responsible for helping keep children safe.
-                But injuries do not happen in one place — they happen across environments.
-              </p>
-              <p className="why-copy" style={{ marginBottom: 0 }}>
-                When information is fragmented, decisions are made without full
-                context. That is where safeguarding risk, poor communication, and
-                avoidable mistakes can creep in.
-              </p>
-            </div>
-          </section>
+  <section className="section">
+  <div className="why-panel">
+    <div className="section-eyebrow">Why this matters</div>
+
+    <h2 className="section-title">
+      Duty of care does not stop at one organisation’s front door.
+    </h2>
+
+    <p className="why-copy">
+      Children move between school, sport and home every day.
+      Their information often doesn't.
+    </p>
+
+    <p className="why-copy">
+      When information is fragmented, decisions are made without full
+      context. That is where safeguarding concerns, communication failures
+      and avoidable mistakes can occur.
+    </p>
+
+    <h3 style={{
+      marginTop: "36px",
+      marginBottom: "16px",
+      fontSize: "24px",
+      fontWeight: 600
+    }}>
+      Confidence Beyond The Touchline
+    </h3>
+
+    <p className="why-copy">
+      Parents want confidence that their child is safe, visible and supported
+      wherever they participate.
+    </p>
+
+    <p className="why-copy" style={{ marginBottom: 0 }}>
+      By helping schools, clubs and parents work from the same information,
+      Knockd creates reassurance, improves communication and helps build
+      trust around a child's welfare.
+      <strong> Because confidence doesn't just support safety — it helps children stay involved.</strong>
+    </p>
+  </div>
+</section>
 
           <section id="features" className="section">
             <div className="section-eyebrow">How Knockd reduces risk</div>
