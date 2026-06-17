@@ -23,11 +23,11 @@ const features = [
   },
 ];
 
-  const scenarios = [
-    "A child is injured at a weekend match and arrives at school on Monday — but nobody in PE knows.",
-    "A school logs an issue internally, but the sports club never sees it before the next session.",
-    "Important injury information sits across WhatsApp, email, memory, or not at all.",
-  ];
+const scenarios = [
+  "A child is injured at a weekend match and arrives at school on Monday — but nobody knows.",
+  "A school places restrictions on a child, but the sports club never sees them before training.",
+  "Important welfare information sits across WhatsApp, emails, spreadsheets and memory.",
+];
 
 const audience = [
   { icon: "🏫", label: "Primary and secondary schools" },
