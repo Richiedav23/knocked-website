@@ -3,23 +3,23 @@ export default function App() {
 const features = [
   {
     icon: "👁️",
-    title: "Shared injury visibility",
-    text: "Schools, clubs, and parents can work from the same up-to-date injury context.",
+    title: "Visibility when it matters most",
+    text: "Schools, clubs and parents can work from the same up-to-date welfare and injury information.",
+  },
+  {
+    icon: "🔄",
+    title: "Continuity across organisations",
+    text: "Critical information follows the child between school, sport and home, reducing communication gaps.",
+  },
+  {
+    icon: "✅",
+    title: "Accountability and action",
+    text: "Restrictions, reviews, acknowledgements and updates are recorded with a clear audit trail.",
   },
   {
     icon: "📋",
-    title: "Clear injury timelines",
-    text: "Every incident, update, and restriction recorded in one place for better continuity.",
-  },
-  {
-    icon: "🛡️",
-    title: "Safer return-to-play decisions",
-    text: "Better information for PE, training, matches, and physical activity decisions.",
-  },
-  {
-    icon: "👨‍👩‍👧",
-    title: "Built around the child",
-    text: "The record follows the child across school and sport, not just one organisation.",
+    title: "Evidence you can trust",
+    text: "Every incident, update and decision is captured in one place when proof matters most.",
   },
 ];
 
