@@ -30,11 +30,11 @@ const scenarios = [
 ];
 
 const audience = [
-  { icon: "🏫", label: "Primary and secondary schools" },
-  { icon: "⚽", label: "Grassroots football clubs" },
-  { icon: "🏆", label: "Youth sports organisations" },
-  { icon: "📋", label: "Coaches and safeguarding leads" }, 
-]
+  { icon: "🏫", label: "Schools and education providers" },
+  { icon: "⚽", label: "Sports clubs and academies" },
+  { icon: "👨‍👩‍👧", label: "Parents and guardians" },
+  { icon: "🛡️", label: "Welfare and safeguarding teams" },
+];
 
 return (
   <>
