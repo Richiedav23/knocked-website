@@ -1004,7 +1004,7 @@ display: grid;
     <p className="why-copy">
       When information is fragmented, decisions are made without full
       context. That is where safeguarding concerns, communication failures
-      and avoidable mistakes can occur.
+      and avoidable mistakes can occur. Children don't fall through the cracks because incidents happen. They fall through the cracks because information does.
     </p>
 
     <h3 style={{
