@@ -693,7 +693,7 @@ display: grid;
   }}
 >
   <img 
-    src="/Kncokdbanner2.png"
+    src="/Knockdbanner3.png"
     alt="Knockd"
     style={{ 
       width: "100%", 
@@ -1070,7 +1070,7 @@ display: grid;
             margin: "50px 0 20px" 
           }}>
             <img 
-              src="/Kncokdbanner2.png" 
+              src="/Knockdbanner3.png" 
               alt="Knockd"
               style={{ width: "340px", opacity: 0.95 }}
             />
