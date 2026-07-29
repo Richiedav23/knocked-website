@@ -699,7 +699,7 @@ display: grid;
     style={{
       color: "#0f172a",
       fontWeight: 800,
-      fontSize: "14px",
+      fontSize: "16px",
       textDecoration: "none"
     }}
   >
@@ -711,7 +711,7 @@ display: grid;
     style={{
       color: "#475569",
       fontWeight: 700,
-      fontSize: "14px",
+      fontSize: "16px",
       textDecoration: "none"
     }}
   >
@@ -723,7 +723,7 @@ display: grid;
     style={{
       color: "#1d4ed8",
       fontWeight: 800,
-      fontSize: "14px",
+      fontSize: "16px",
       textDecoration: "none"
     }}
   >
@@ -1326,6 +1326,7 @@ function AskKnockdPage() {
           font-size: 40px;
           line-height: 1.08;
           letter-spacing: -0.04em;
+          color: #ffffff;
         }
 
         .ask-story-panel p {
@@ -1641,24 +1642,67 @@ function AskKnockdPage() {
 
           <section className="ask-story">
 
-            <div className="ask-story-panel">
+<div className="ask-story-panel">
 
-              <div className="ask-story-label">
-                Know before you get home
-              </div>
+  <div className="ask-story-label">
+    Built for the AI era
+  </div>
 
-              <h2>
-                One question. One connected picture.
-              </h2>
+  <h2>
+    Knockd connects to the AI tools people already use.
+  </h2>
 
-              <p>
-                Imagine finishing work and simply asking how your child
-                has been that day. Knockd can bring together the relevant
-                information you already have permission to access across
-                their school and sporting activities.
-              </p>
+  <p>
+    Using the Model Context Protocol (MCP), Knockd can securely
+    make authorised information available to compatible AI assistants.
+  </p>
 
-            </div>
+  <p style={{ marginTop: "18px" }}>
+    Your existing Knockd permissions remain in control. AI provides
+    the conversation. <strong>Knockd provides the trusted record.</strong>
+  </p>
+
+  <div
+    style={{
+      marginTop: "30px",
+      padding: "18px",
+      borderRadius: "20px",
+      background: "rgba(255,255,255,0.10)",
+      border: "1px solid rgba(255,255,255,0.18)"
+    }}
+  >
+    <div
+      style={{
+        fontSize: "12px",
+        fontWeight: 800,
+        letterSpacing: "0.12em",
+        textTransform: "uppercase",
+        color: "#bfdbfe",
+        marginBottom: "14px"
+      }}
+    >
+      Secure AI access
+    </div>
+
+    <div
+      style={{
+        fontSize: "17px",
+        fontWeight: 800,
+        lineHeight: 1.8,
+        color: "#ffffff"
+      }}
+    >
+      AI Assistant
+      <span style={{ opacity: 0.55 }}> → </span>
+      MCP
+      <span style={{ opacity: 0.55 }}> → </span>
+      Knockd
+      <span style={{ opacity: 0.55 }}> → </span>
+      School · Sport · Home
+    </div>
+  </div>
+
+</div>
 
             <div className="ask-conversation">
 
