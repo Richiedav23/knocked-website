@@ -1887,10 +1887,9 @@ function AskKnockdPage() {
                   Knockd
                 </div>
 
-                Freddie had PE this morning with no incidents recorded.
-                A minor ankle knock was logged at lunchtime and he is
-                currently being monitored. A no-contact restriction is
-                recorded for this evening.
+              Freddie had PE this morning with no incidents recorded. 
+              A minor ankle knock was logged at lunchtime, 
+              and an active no-contact restriction is recorded for this evening
 
               </div>
 
@@ -1904,9 +1903,9 @@ function AskKnockdPage() {
                   Knockd
                 </div>
 
-                Freddie currently has a no-contact restriction recorded
-                against him, so his Knockd record does not currently
-                support full participation in contact training tonight.
+              Freddie has an active no-contact restriction 
+              recorded for this evening.The restriction remains 
+              in place until it is reviewed or updated by an authorised person.
 
               </div>
 
@@ -1944,9 +1943,9 @@ function AskKnockdPage() {
           </div>
 
           <div className="ask-drive-answer">
-            Freddie had PE this morning with no incidents recorded.
-            A minor ankle knock was logged at lunchtime and there is
-            currently a no-contact restriction in place for this evening.
+              Freddie had PE this morning with no incidents recorded. 
+              A minor ankle knock was logged at lunchtime, 
+              and an active no-contact restriction is recorded for this evening
           </div>
         </div>
       </div>
@@ -2014,9 +2013,9 @@ function AskKnockdPage() {
           Knockd
         </div>
 
-        Freddie currently has an active no-contact restriction recorded,
-        so his Knockd record does not support full participation in contact
-        rugby tonight.
+              Freddie has an active no-contact restriction 
+              recorded for this evening.The restriction remains 
+              in place until it is reviewed or updated by an authorised person.
       </div>
 
     </div>
