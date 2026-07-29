@@ -1459,7 +1459,7 @@ function AskKnockdPage() {
 .ask-connected-card {
   border-radius: 30px;
   padding: 32px;
-  min-height: 100%;
+  align-self: start;
 }
 
 .ask-drive-card {
@@ -1602,6 +1602,7 @@ function AskKnockdPage() {
 @media (max-width: 900px) {
   .ask-real-grid {
     grid-template-columns: 1fr;
+    align-items: start;
   }
 }
 
