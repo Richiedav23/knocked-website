@@ -1,5 +1,102 @@
 export default function App() {
-  
+  const path = window.location.pathname;
+
+  if (path === "/ask-knockd") {
+    return <AskKnockdPage />;
+  }
+function AskKnockdPage() {
+  return (
+    <>
+      <style>{`
+        body {
+          margin: 0;
+          font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          background: #f8fbff;
+          color: #0f172a;
+        }
+
+        .ask-page {
+          min-height: 100vh;
+          padding: 40px 24px 80px;
+        }
+
+        .ask-container {
+          max-width: 1180px;
+          margin: 0 auto;
+        }
+
+        .ask-back {
+          display: inline-block;
+          margin-bottom: 40px;
+          color: #1d4ed8;
+          font-weight: 700;
+          text-decoration: none;
+        }
+
+        .ask-hero {
+          text-align: center;
+          padding: 70px 0 40px;
+        }
+
+        .ask-eyebrow {
+          font-size: 13px;
+          text-transform: uppercase;
+          letter-spacing: 0.14em;
+          font-weight: 800;
+          color: #64748b;
+          margin-bottom: 18px;
+        }
+
+        .ask-hero h1 {
+          font-size: 64px;
+          line-height: 1;
+          letter-spacing: -0.05em;
+          margin: 0 auto 24px;
+          max-width: 850px;
+        }
+
+        .ask-hero p {
+          font-size: 20px;
+          line-height: 1.7;
+          color: #475569;
+          max-width: 760px;
+          margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+          .ask-hero h1 {
+            font-size: 40px;
+          }
+
+          .ask-hero p {
+            font-size: 17px;
+          }
+        }
+      `}</style>
+
+      <div className="ask-page">
+        <div className="ask-container">
+          <a className="ask-back" href="/">
+            ← Back to Knockd
+          </a>
+
+          <section className="ask-hero">
+            <div className="ask-eyebrow">Introducing Ask Knockd</div>
+
+            <h1>Your child’s day. Just ask.</h1>
+
+            <p>
+              Knockd connects the information already shared across school,
+              sport and home — so authorised users can get the picture simply
+              by asking.
+            </p>
+          </section>
+        </div>
+      </div>
+    </>
+  );
+}
+  const features = [
 const features = [
   {
     icon: "👁️",
