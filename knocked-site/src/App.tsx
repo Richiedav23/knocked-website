@@ -686,8 +686,50 @@ display: grid;
   }}
 >
 
-  {/* Left spacer */}
-  <div />
+{/* Left navigation */}
+<nav
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "18px"
+  }}
+>
+  <a
+    href="/"
+    style={{
+      color: "#0f172a",
+      fontWeight: 800,
+      fontSize: "14px",
+      textDecoration: "none"
+    }}
+  >
+    Home
+  </a>
+
+  <a
+    href="#features"
+    style={{
+      color: "#475569",
+      fontWeight: 700,
+      fontSize: "14px",
+      textDecoration: "none"
+    }}
+  >
+    How it works
+  </a>
+
+  <a
+    href="/ask-knockd"
+    style={{
+      color: "#1d4ed8",
+      fontWeight: 800,
+      fontSize: "14px",
+      textDecoration: "none"
+    }}
+  >
+    Ask Knockd
+  </a>
+</nav>
 
   {/* Center logo */}
 <div
@@ -752,16 +794,19 @@ display: grid;
                 through the cracks.
               </p>
 
-              <div className="cta-row">
-                <a className="primary-cta" href="mailto:richard@knockd.co.uk">
-                  Book a demo
-                </a>
+       <div className="cta-row">
+  <a className="primary-cta" href="mailto:richard@knockd.co.uk">
+    Book a demo
+  </a>
 
-                <a className="secondary-cta" href="#features">
-                  See how it works
-                </a>
-              </div>
+  <a className="secondary-cta" href="/ask-knockd">
+    Ask Knockd →
+  </a>
 
+  <a className="secondary-cta" href="#features">
+    See how it works
+  </a>
+</div>
               <div className="hero-proof">
                 Built for safeguarding leads, coaches, and schools managing real-world risk.
               </div>
@@ -1509,11 +1554,46 @@ function AskKnockdPage() {
 
         <header className="ask-header">
 
-          <div>
-            <a className="ask-home-link" href="/">
-              Home
-            </a>
-          </div>
+ <nav
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "18px"
+  }}
+>
+  <a
+    href="/"
+    style={{
+      color: "#475569",
+      fontWeight: 700,
+      fontSize: "14px"
+    }}
+  >
+    Home
+  </a>
+
+  <a
+    href="/#features"
+    style={{
+      color: "#475569",
+      fontWeight: 700,
+      fontSize: "14px"
+    }}
+  >
+    How it works
+  </a>
+
+  <a
+    href="/ask-knockd"
+    style={{
+      color: "#1d4ed8",
+      fontWeight: 800,
+      fontSize: "14px"
+    }}
+  >
+    Ask Knockd
+  </a>
+</nav>
 
           <div className="ask-header-logo">
             <a href="/">
