@@ -1444,6 +1444,176 @@ function AskKnockdPage() {
           font-size: 18px;
           line-height: 1.8;
         }
+.ask-real-life {
+  padding: 30px 0 70px;
+}
+
+.ask-real-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 34px;
+}
+
+.ask-drive-card,
+.ask-connected-card {
+  border-radius: 30px;
+  padding: 32px;
+  min-height: 100%;
+}
+
+.ask-drive-card {
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    #eff6ff 55%,
+    #dbeafe 100%
+  );
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 24px 60px rgba(29, 78, 216, 0.10);
+}
+
+.ask-connected-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.ask-drive-label,
+.ask-connected-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+.ask-drive-scene {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 22px;
+  align-items: center;
+}
+
+.ask-drive-road {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    #0f172a,
+    #1e3a8a
+  );
+  font-size: 54px;
+}
+
+.ask-drive-person {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.ask-drive-question {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.ask-drive-answer {
+  color: #475569;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.ask-drive-followup {
+  margin-top: 24px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.ask-source-card {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.ask-source-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.ask-source-title {
+  font-weight: 800;
+  margin-bottom: 5px;
+  color: #0f172a;
+}
+
+.ask-source-copy {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.ask-source-line {
+  width: 2px;
+  height: 26px;
+  background: linear-gradient(#bfdbfe, #dbeafe);
+  margin: 6px 0 6px 22px;
+}
+
+.ask-connected-result {
+  margin-top: 26px;
+  padding: 20px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1d4ed8
+  );
+  color: white;
+  line-height: 1.7;
+}
+
+.ask-connected-result .ask-message-title {
+  color: #bfdbfe;
+}
+
+@media (max-width: 900px) {
+  .ask-real-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ask-drive-scene {
+    grid-template-columns: 1fr;
+  }
+
+  .ask-drive-road {
+    min-height: 110px;
+  }
+}
 
         .ask-footer {
           padding: 18px 0 70px;
@@ -1742,6 +1912,117 @@ function AskKnockdPage() {
             </div>
 
           </section>
+          <section className="ask-real-life">
+
+  <div className="ask-section-eyebrow">
+    From record to real life
+  </div>
+
+  <h2 className="ask-section-title">
+    Before you even get home, you can know.
+  </h2>
+
+  <div className="ask-real-grid">
+
+    <div className="ask-drive-card">
+
+      <div className="ask-drive-label">
+        On the journey home
+      </div>
+
+      <div className="ask-drive-scene">
+        <div className="ask-drive-road">🚘</div>
+
+        <div className="ask-drive-copy">
+          <div className="ask-drive-person">
+            Parent
+          </div>
+
+          <div className="ask-drive-question">
+            “How’s Freddie been today?”
+          </div>
+
+          <div className="ask-drive-answer">
+            Freddie had PE this morning with no incidents recorded.
+            A minor ankle knock was logged at lunchtime and there is
+            currently a no-contact restriction in place for this evening.
+          </div>
+        </div>
+      </div>
+
+      <div className="ask-drive-followup">
+        “Can he play rugby tonight?”
+      </div>
+
+    </div>
+
+    <div className="ask-connected-card">
+
+      <div className="ask-connected-label">
+        Knockd connects the picture
+      </div>
+
+      <div className="ask-source-card">
+        <div className="ask-source-icon">🏫</div>
+
+        <div>
+          <div className="ask-source-title">
+            School
+          </div>
+
+          <div className="ask-source-copy">
+            PE completed this morning. Minor ankle knock logged at lunchtime.
+          </div>
+        </div>
+      </div>
+
+      <div className="ask-source-line" />
+
+      <div className="ask-source-card">
+        <div className="ask-source-icon">🏉</div>
+
+        <div>
+          <div className="ask-source-title">
+            Club
+          </div>
+
+          <div className="ask-source-copy">
+            Rugby training scheduled for this evening.
+          </div>
+        </div>
+      </div>
+
+      <div className="ask-source-line" />
+
+      <div className="ask-source-card">
+        <div className="ask-source-icon">🛡️</div>
+
+        <div>
+          <div className="ask-source-title">
+            Current restriction
+          </div>
+
+          <div className="ask-source-copy">
+            No contact activity until reviewed.
+          </div>
+        </div>
+      </div>
+
+      <div className="ask-connected-result">
+        <div className="ask-message-title">
+          Knockd
+        </div>
+
+        Freddie currently has an active no-contact restriction recorded,
+        so his Knockd record does not support full participation in contact
+        rugby tonight.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
           <section className="ask-section">
 
