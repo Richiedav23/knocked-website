@@ -1106,90 +1106,643 @@ function AskKnockdPage() {
   return (
     <>
       <style>{`
-        body {
+        * {
+          box-sizing: border-box;
+        }
+
+        html, body, #root {
           margin: 0;
-          font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-          background: #f8fbff;
+          padding: 0;
+          min-height: 100%;
+        }
+
+        body {
+          font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+            BlinkMacSystemFont, "Segoe UI", sans-serif;
+          background: radial-gradient(
+            circle at top left,
+            #dbeafe 0%,
+            #f8fbff 28%,
+            #ffffff 60%,
+            #f1f5f9 100%
+          );
           color: #0f172a;
+        }
+
+        a {
+          text-decoration: none;
         }
 
         .ask-page {
           min-height: 100vh;
-          padding: 40px 24px 80px;
+          width: 100%;
         }
 
         .ask-container {
-          max-width: 1180px;
+          width: 100%;
+          max-width: 1240px;
           margin: 0 auto;
+          padding: 0 32px;
         }
 
-        .ask-back {
-          display: inline-block;
-          margin-bottom: 40px;
-          color: #1d4ed8;
+        .ask-header {
+          display: grid;
+          grid-template-columns: 1fr auto 1fr;
+          align-items: center;
+          padding: 10px 32px 28px;
+          max-width: 1240px;
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        .ask-header-logo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .ask-header-logo img {
+          width: 100%;
+          max-width: 460px;
+          height: auto;
+          opacity: 0.95;
+        }
+
+        .ask-header-sub {
+          margin-top: 10px;
+          font-size: 13px;
           font-weight: 700;
-          text-decoration: none;
+          letter-spacing: 0.18em;
+          text-transform: uppercase;
+          color: #64748b;
+          text-align: center;
+        }
+
+        .ask-header-right {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .ask-home-link {
+          color: #475569;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .ask-demo-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #0f172a, #1d4ed8);
+          color: white;
+          padding: 13px 20px;
+          border-radius: 16px;
+          font-weight: 700;
+          box-shadow: 0 14px 30px rgba(29, 78, 216, 0.2);
+          transition: all 0.2s ease;
+          white-space: nowrap;
+        }
+
+        .ask-demo-btn:hover {
+          transform: translateY(-2px);
         }
 
         .ask-hero {
           text-align: center;
-          padding: 70px 0 40px;
+          padding: 70px 0 60px;
         }
 
         .ask-eyebrow {
+          display: inline-flex;
+          padding: 10px 16px;
+          border-radius: 999px;
+          background: rgba(255,255,255,0.82);
+          border: 1px solid #dbeafe;
+          color: #1e3a8a;
           font-size: 13px;
-          text-transform: uppercase;
-          letter-spacing: 0.14em;
           font-weight: 800;
-          color: #64748b;
-          margin-bottom: 18px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+          box-shadow: 0 10px 30px rgba(15,23,42,0.05);
         }
 
         .ask-hero h1 {
-          font-size: 64px;
-          line-height: 1;
-          letter-spacing: -0.05em;
           margin: 0 auto 24px;
-          max-width: 850px;
+          font-size: 64px;
+          line-height: 1.02;
+          letter-spacing: -0.05em;
+          max-width: 900px;
+          color: #020617;
         }
 
-        .ask-hero p {
-          font-size: 20px;
-          line-height: 1.7;
+        .ask-hero-copy {
+          font-size: 19px;
+          line-height: 1.75;
           color: #475569;
-          max-width: 760px;
+          max-width: 780px;
           margin: 0 auto;
         }
 
+        .ask-story {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 34px;
+          align-items: stretch;
+          margin: 30px 0 70px;
+        }
+
+        .ask-story-panel {
+          background: linear-gradient(
+            135deg,
+            #0f172a,
+            #1e3a8a 58%,
+            #2563eb 100%
+          );
+          color: white;
+          border-radius: 34px;
+          padding: 42px;
+          box-shadow: 0 34px 80px rgba(15, 23, 42, 0.22);
+        }
+
+        .ask-story-label {
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 0.14em;
+          font-weight: 800;
+          color: #bfdbfe;
+          margin-bottom: 18px;
+        }
+
+        .ask-story-panel h2 {
+          margin: 0 0 18px;
+          font-size: 40px;
+          line-height: 1.08;
+          letter-spacing: -0.04em;
+        }
+
+        .ask-story-panel p {
+          margin: 0;
+          font-size: 18px;
+          line-height: 1.8;
+          color: #eff6ff;
+        }
+
+        .ask-conversation {
+          background: rgba(255,255,255,0.94);
+          border: 1px solid #e2e8f0;
+          border-radius: 34px;
+          padding: 32px;
+          box-shadow: 0 28px 70px rgba(15,23,42,0.10);
+        }
+
+        .ask-message {
+          padding: 18px 20px;
+          border-radius: 22px;
+          margin-bottom: 18px;
+          line-height: 1.65;
+        }
+
+        .ask-message-parent {
+          background: #eff6ff;
+          border: 1px solid #bfdbfe;
+          color: #1e3a8a;
+          font-weight: 700;
+        }
+
+        .ask-message-knockd {
+          background: #f8fafc;
+          border: 1px solid #e2e8f0;
+          color: #334155;
+        }
+
+        .ask-message-title {
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-weight: 800;
+          margin-bottom: 8px;
+          color: #64748b;
+        }
+
+        .ask-section {
+          padding: 30px 0 60px;
+        }
+
+        .ask-section-eyebrow {
+          text-align: center;
+          font-size: 13px;
+          text-transform: uppercase;
+          letter-spacing: 0.12em;
+          font-weight: 800;
+          color: #64748b;
+          margin-bottom: 12px;
+        }
+
+        .ask-section-title {
+          margin: 0 auto 28px;
+          font-size: 40px;
+          line-height: 1.08;
+          letter-spacing: -0.04em;
+          color: #0f172a;
+          max-width: 850px;
+          text-align: center;
+        }
+
+        .ask-role-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+        }
+
+        .ask-role-card {
+          background: rgba(255,255,255,0.94);
+          border: 1px solid #e2e8f0;
+          border-radius: 24px;
+          padding: 26px;
+          box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+        }
+
+        .ask-role-icon {
+          font-size: 30px;
+          margin-bottom: 14px;
+        }
+
+        .ask-role-card h3 {
+          margin: 0 0 12px;
+          font-size: 20px;
+        }
+
+        .ask-role-card p {
+          margin: 0;
+          color: #475569;
+          line-height: 1.7;
+        }
+
+        .ask-security {
+          background: rgba(255,255,255,0.92);
+          border: 1px solid #e2e8f0;
+          border-radius: 30px;
+          padding: 34px;
+          text-align: center;
+          box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+          margin-bottom: 50px;
+        }
+
+        .ask-security p {
+          max-width: 850px;
+          margin: 0 auto;
+          color: #475569;
+          font-size: 18px;
+          line-height: 1.8;
+        }
+
+        .ask-footer {
+          padding: 18px 0 70px;
+        }
+
+        .ask-footer-panel {
+          background: linear-gradient(
+            135deg,
+            #cfe3ff,
+            #ffffff 50%,
+            #e0f2fe
+          );
+          border: 1px solid #bfdbfe;
+          border-radius: 32px;
+          padding: 44px;
+          text-align: center;
+          box-shadow: 0 20px 40px rgba(29, 78, 216, 0.08);
+        }
+
+        .ask-footer-panel h2 {
+          margin: 0 0 12px;
+          font-size: 40px;
+          line-height: 1.08;
+          color: #0f172a;
+          letter-spacing: -0.04em;
+        }
+
+        .ask-footer-panel p {
+          max-width: 760px;
+          margin: 0 auto 24px;
+          color: #475569;
+          font-size: 18px;
+          line-height: 1.8;
+        }
+
+        .ask-footer-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(135deg, #0f172a, #1d4ed8);
+          color: white;
+          padding: 15px 26px;
+          border-radius: 18px;
+          font-weight: 800;
+          box-shadow: 0 14px 30px rgba(29, 78, 216, 0.16);
+        }
+
+        @media (max-width: 900px) {
+          .ask-story {
+            grid-template-columns: 1fr;
+          }
+
+          .ask-role-grid {
+            grid-template-columns: 1fr;
+          }
+
+          .ask-header {
+            grid-template-columns: 1fr;
+            gap: 18px;
+            text-align: center;
+          }
+
+          .ask-header-right {
+            justify-content: center;
+          }
+        }
+
         @media (max-width: 768px) {
+          .ask-container {
+            padding: 0 18px;
+          }
+
+          .ask-header {
+            padding: 12px 18px 20px;
+          }
+
+          .ask-header-logo img {
+            max-width: 320px;
+          }
+
+          .ask-hero {
+            padding: 40px 0 30px;
+          }
+
           .ask-hero h1 {
             font-size: 40px;
           }
 
-          .ask-hero p {
+          .ask-hero-copy {
             font-size: 17px;
+          }
+
+          .ask-story-panel,
+          .ask-conversation,
+          .ask-security,
+          .ask-footer-panel {
+            padding: 22px;
+          }
+
+          .ask-story-panel h2,
+          .ask-section-title,
+          .ask-footer-panel h2 {
+            font-size: 30px;
           }
         }
       `}</style>
 
       <div className="ask-page">
-        <div className="ask-container">
-          <a className="ask-back" href="/">
-            ← Back to Knockd
-          </a>
+
+        <header className="ask-header">
+
+          <div>
+            <a className="ask-home-link" href="/">
+              Home
+            </a>
+          </div>
+
+          <div className="ask-header-logo">
+            <a href="/">
+              <img
+                src="/Knockdbanner7.PNG"
+                alt="Knockd"
+              />
+            </a>
+
+            <div className="ask-header-sub">
+              SAFEGUARDING VISIBILITY ACROSS SCHOOL & SPORT
+            </div>
+          </div>
+
+          <div className="ask-header-right">
+            <a
+              className="ask-demo-btn"
+              href="mailto:richard@knockd.co.uk"
+            >
+              Request a demo
+            </a>
+          </div>
+
+        </header>
+
+        <main className="ask-container">
 
           <section className="ask-hero">
-            <div className="ask-eyebrow">Introducing Ask Knockd</div>
 
-            <h1>Your child’s day. Just ask.</h1>
+            <div className="ask-eyebrow">
+              Introducing Ask Knockd
+            </div>
 
-            <p>
-              Knockd connects the information already shared across school,
-              sport and home — so authorised users can get the picture simply
-              by asking.
+            <h1>
+              Your child’s day. Just ask.
+            </h1>
+
+            <p className="ask-hero-copy">
+              Knockd connects information across school, sport and home,
+              helping authorised users understand the picture without
+              having to chase updates across different people and systems.
             </p>
+
           </section>
-        </div>
+
+          <section className="ask-story">
+
+            <div className="ask-story-panel">
+
+              <div className="ask-story-label">
+                Know before you get home
+              </div>
+
+              <h2>
+                One question. One connected picture.
+              </h2>
+
+              <p>
+                Imagine finishing work and simply asking how your child
+                has been that day. Knockd can bring together the relevant
+                information you already have permission to access across
+                their school and sporting activities.
+              </p>
+
+            </div>
+
+            <div className="ask-conversation">
+
+              <div className="ask-message ask-message-parent">
+                “How’s Freddie been today?”
+              </div>
+
+              <div className="ask-message ask-message-knockd">
+
+                <div className="ask-message-title">
+                  Knockd
+                </div>
+
+                Freddie had PE this morning with no incidents recorded.
+                A minor ankle knock was logged at lunchtime and he is
+                currently being monitored. A no-contact restriction is
+                recorded for this evening.
+
+              </div>
+
+              <div className="ask-message ask-message-parent">
+                “Can he play rugby tonight?”
+              </div>
+
+              <div className="ask-message ask-message-knockd">
+
+                <div className="ask-message-title">
+                  Knockd
+                </div>
+
+                Freddie currently has a no-contact restriction recorded
+                against him, so his Knockd record does not currently
+                support full participation in contact training tonight.
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <section className="ask-section">
+
+            <div className="ask-section-eyebrow">
+              One record. Different questions.
+            </div>
+
+            <h2 className="ask-section-title">
+              Useful information for everyone responsible for the child.
+            </h2>
+
+            <div className="ask-role-grid">
+
+              <div className="ask-role-card">
+
+                <div className="ask-role-icon">👨‍👩‍👧</div>
+
+                <h3>Parent</h3>
+
+                <p>
+                  “How has Freddie been today across school and sport?”
+                </p>
+
+              </div>
+
+              <div className="ask-role-card">
+
+                <div className="ask-role-icon">🏫</div>
+
+                <h3>School</h3>
+
+                <p>
+                  “Anything I need to know before Year 8 rugby?”
+                </p>
+
+              </div>
+
+              <div className="ask-role-card">
+
+                <div className="ask-role-icon">🏉</div>
+
+                <h3>Club</h3>
+
+                <p>
+                  “Does anyone have an active restriction before training?”
+                </p>
+
+              </div>
+
+            </div>
+
+          </section>
+
+          <section className="ask-section">
+
+            <div className="ask-security">
+
+              <div className="ask-section-eyebrow">
+                Ask naturally. Access securely.
+              </div>
+
+              <h2 className="ask-section-title">
+                The answer changes depending on who is asking.
+              </h2>
+
+              <p>
+                Knockd only surfaces information that the signed-in user
+                is authorised to access. Parents, schools and clubs each
+                see the appropriate view of the child’s information,
+                maintaining the same role-based visibility and safeguarding
+                controls already built into Knockd.
+              </p>
+
+            </div>
+
+          </section>
+
+          <section className="ask-section">
+
+            <div className="ask-security">
+
+              <div className="ask-section-eyebrow">
+                Supporting decisions, not replacing them
+              </div>
+
+              <h2 className="ask-section-title">
+                Knockd surfaces the record. People remain responsible for the decision.
+              </h2>
+
+              <p>
+                Ask Knockd can help users understand recorded incidents,
+                monitoring and restrictions. It does not independently
+                diagnose injuries or medically clear a child to participate.
+                The trusted record remains the source of truth.
+              </p>
+
+            </div>
+
+          </section>
+
+          <section className="ask-footer">
+
+            <div className="ask-footer-panel">
+
+              <h2>
+                The information follows the child. Now the conversation can too.
+              </h2>
+
+              <p>
+                One child. School. Sport. Home. One connected picture.
+              </p>
+
+              <a
+                className="ask-footer-btn"
+                href="mailto:richard@knockd.co.uk"
+              >
+                Request a demo
+              </a>
+
+            </div>
+
+          </section>
+
+        </main>
+
       </div>
     </>
   );
