@@ -38,7 +38,7 @@ const audience = [
   { icon: "🏫", label: "Schools and education providers" },
   { icon: "⚽", label: "Sports clubs and academies" },
   { icon: "👨‍👩‍👧", label: "Parents and guardians" },
-  { icon: "🛡️", label: "Welfare and safeguarding teams" },
+  { icon: "🛡️", label: "Designated staff" },
 ];
 
 return (
@@ -761,7 +761,7 @@ display: grid;
       textAlign: "center"
     }}
   >
-    SAFEGUARDING VISIBILITY ACROSS SCHOOL & SPORT
+    INFORMATION THAT FOLLOWS THE CHILD
   </div>
 </div>
 
@@ -807,7 +807,7 @@ display: grid;
   </a>
 </div>
               <div className="hero-proof">
-                Built to keep, coaches, and schools connected.
+                Built to keep, coaches and schools connected to parents.
               </div>
 
               <div className="hero-tags">
@@ -869,9 +869,10 @@ display: grid;
     </h2>
 
 <p className="why-copy">
-  The sector is demanding change. Schools, clubs, governing bodies and safeguarding
-  frameworks are all moving toward greater visibility, accountability and
-  safeguarding continuity across sport and education. Knockd was built for it.
+  The sector is demanding change. Schools, sports clubs and governing bodies 
+  are moving towards greater visibility, accountability and continuity in how 
+  they manage child injuries, recovery and participation. 
+  Knockd was built for exactly that.
 </p>
 
     <div
@@ -1051,9 +1052,9 @@ display: grid;
     </p>
 
     <p className="why-copy">
-      When information is fragmented, decisions are made without full
-      context. That is where safeguarding concerns, communication failures
-      and avoidable mistakes can occur. Children don't fall through the cracks because incidents happen. They fall through the cracks because information does.
+      When information is fragmented, schools, sports clubs and parents are forced to make decisions without the full picture. 
+      Important updates are missed, communication becomes inconsistent and confidence in decisions is reduced.
+      Children don't fall through the cracks because incidents happen. They fall through the cracks because information doesn't follow them.
     </p>
 
     <h3 style={{
@@ -1775,7 +1776,7 @@ function AskKnockdPage() {
             </a>
 
             <div className="ask-header-sub">
-              SAFEGUARDING VISIBILITY ACROSS SCHOOL & SPORT
+              ONE TRUSTED RECORD ACROSS SCHOOL & SPORT
             </div>
           </div>
 
@@ -2088,11 +2089,9 @@ function AskKnockdPage() {
               </h2>
 
               <p>
-                Knockd only surfaces information that the signed-in user
-                is authorised to access. Parents, schools and clubs each
-                see the appropriate view of the child’s information,
-                maintaining the same role-based visibility and safeguarding
-                controls already built into Knockd.
+              Knockd only surfaces information that the signed-in user is authorised to access. 
+              Parents, schools and sports clubs each see the appropriate view of a child's information 
+                through role-based permissions, ensuring privacy, accountability and controlled information sharing.
               </p>
 
             </div>
