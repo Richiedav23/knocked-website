@@ -788,10 +788,9 @@ display: grid;
         <h1>A safer way to manage child injuries across school and sport.</h1>
         
               <p className="hero-copy">
-                Knockd helps schools, sports clubs, and parents stay aligned on
-                injuries, recovery, and return-to-play decisions — with clearer
-                safeguarding, better communication, and less information falling
-                through the cracks.
+                Knockd helps schools, sports clubs and parents stay aligned on injuries, 
+                recovery and return-to-play decisions — with one trusted record that keeps 
+                everyone informed and reduces important information being missed.
               </p>
 
        <div className="cta-row">
@@ -808,13 +807,13 @@ display: grid;
   </a>
 </div>
               <div className="hero-proof">
-                Built for safeguarding leads, coaches, and schools managing real-world risk.
+                Built to keep, coaches, and schools connected.
               </div>
 
               <div className="hero-tags">
-                <span>Safeguarding-first</span>
-                <span>Role-based visibility</span>
-                <span>Built around the child</span>
+                <span>One Trusted Record</span>
+                <span>Connected Organisations</span>
+                <span>Complete Audit Trail</span>
               </div>
             </div>
 
