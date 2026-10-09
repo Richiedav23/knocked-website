@@ -740,7 +740,7 @@ display: grid;
   }}
 >
   <img 
-    src="/Knockd block.PNG"
+    src="Knockd block.png"
     alt="Knockd"
     style={{ 
       width: "100%", 
