@@ -740,7 +740,7 @@ display: grid;
   }}
 >
   <img 
-    src="/Knockdbanner7.PNG"
+    src="/Knockd block.PNG"
     alt="Knockd"
     style={{ 
       width: "100%", 
@@ -1770,7 +1770,7 @@ function AskKnockdPage() {
           <div className="ask-header-logo">
             <a href="/">
               <img
-                src="/Knockdbanner7.PNG"
+                src="/Knockd block.PNG"
                 alt="Knockd"
               />
             </a>
